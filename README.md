@@ -69,7 +69,7 @@ Add this to each at-risk service in its compose file, then recreate it:
 | `gpu_reload_check.py --json` | the same report as JSON; exit code 1 if any container is at risk (for monitoring) |
 
 It is **read-only**. It runs `docker ps`, `docker inspect` and `docker exec <container> nvidia-smi -L`. It never
-reloads systemd and never restarts a container. Python 3.8+, no dependencies.
+reloads systemd and never restarts a container. Python 3.9+, no dependencies.
 
 ## Prove the fix yourself
 
